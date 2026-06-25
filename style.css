@@ -5,6 +5,10 @@
     font-family: "Work Sans", sans-serif;   
 }
 
+nav{
+    z-index: 100;
+}
+
 #navbar2{
     background-color: #ffcb02;
     border-radius: 7px;
