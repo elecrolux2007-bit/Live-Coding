@@ -7,13 +7,21 @@
 
 nav{
     z-index: 100;
+
+}
+
+#navbar1{
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7), transparent);
 }
 
 #navbar2{
     background-color: #ffcb02;
     border-radius: 7px;
-    min-height: 12vh;
-    margin-top: 1%;
+    min-height: 3vh;
+    /* position: relative; */
+    padding-bottom: 0px;
+    
+
 }
 
 .hero{
@@ -22,6 +30,7 @@ nav{
     min-width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
+    object-fit: cover;
 }
 
 .hero{
@@ -44,12 +53,117 @@ nav{
 }
 
 #bodi{
-    margin: 0 auto;
-    
+    margin: 0 auto;   
 }
 
 .imgish{
     border: none;
 }
 
+.droppy{
+    position: static;
+    display: inline-block;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
 
+.droppy:hover{
+    border-bottom: 4px solid black;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 20px 30px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%;
+    left: 0%;
+    right: 0%;        /* stretches to fill the full navbar width */
+    min-height: 550px;
+    
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 20px 16px;
+    margin: 20px 40px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    border-radius: 10px;
+}
+
+.dropdown-content a:hover {
+    background-color: #ffcb05;
+    font-weight: bold;
+}
+
+.droppy:hover .dropdown-content {display: inline;
+}
+
+.nav-drop{
+    
+}
+
+#annoying{
+    max-height: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+#cool-btn{
+    background-color: #fcdc44;
+    font-size: 18px;
+}
+
+#cool-btn:hover{
+    background-color: #f8c000;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);;
+}
+
+#accord-bg2{
+    background-color: #e8e8e8;
+    font-size: 17px;
+    padding-bottom: 30px;
+    border: none;
+}
+
+#accord-1{
+    border: none;
+    border-bottom: 1px solid;
+}
+
+.carosel{
+    background-image: url(./Assets/imageye___-_imgi_22_Related-pages-for-call.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 95%;
+    height: 90vh;
+    border-radius: 20px;
+    margin: 0 auto;
+    
+}
+
+.cards {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    color: white;
+    min-width: 300px;
+    min-height: 250px;
+    border: none;
+    margin-top: 28%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    padding: 5% 5%;
+}
+
+.cards span{
+    margin-top: 10%;
+}

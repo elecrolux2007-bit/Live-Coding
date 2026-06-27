@@ -15,8 +15,8 @@
 </head>
 
 <body>
-    <nav class="position-fixed container-fluid mx-0">
-        <nav class="navbar navbar-expand-lg bg-transparent">
+    <nav class="position-fixed container- w-100 mx-0">
+        <nav class="navbar navbar-expand-lg bg-transparent p-0 my-0" id="navbar1">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,9 +27,6 @@
                         <li class="nav-item">
                             <a class="nav-link active text-light" aria-current="page"
                                 href="#"><strong>PERSONAL</strong></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active text-light" aria-current="page" href="#">PERSONAL</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active text-light" aria-current="page" href="#">BUISNESS</a>
@@ -55,33 +52,69 @@
                     <span class="navbar-toggler-icon"></span>
                 </button> -->
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav d-flex justify-content-between gap-5 mx-5 align-items-center">
+                    <ul class="navbar-nav d-flex justify-content-between gap-5 mx-5 ">
                         <li>
-                            <a class="navbar-brand" href="#"><img src="./Assets/mtn.png" width="100px" height="50px"
-                                    alt=""></a>
+                            <a class="navbar-brand droppy" href="#"><img src="./Assets/mtn.png" width="100px"
+                                    height="50px" alt=""></a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link active hover-nav" aria-current="page" href="#">Data</a>
+                        <li class="nav-item droppy">
+                            <a class="nav-link active hover-nav nav-drop" aria-current="page" href="#">Data</a>
+                            <div class="dropdown-content">
+                                <a href="">MTN 5G</a>
+                                <a href="">Data Gifting</a>
+                                <a href="">Social Bundle</a>
+                                <a href="">Data Bundles</a>
+                                <a href="">FibreX</a>
+                                <a href="">Router Plans</a>
+                                <a href=""></a>
+                            </div>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item droppy">
                             <a class="nav-link active hover-nav" aria-current="page" href="#">Voice</a>
+                            <div class="dropdown-content">
+                                <a href="">Voice Plans</a>
+                                <a href="">XtraSpecial Postpaid</a>
+                            </div>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item droppy">
                             <a class="nav-link active hover-nav" aria-current="page" href="#">Roaming</a>
+                            <div class="dropdown-content">
+                                <a href="">International Roaming</a>
+                                <a href="">Int'l Call & SMS Rates</a>
+                            </div>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item droppy">
                             <a class="nav-link active hover-nav" aria-current="page" href="#">Devices</a>
+                            <div class="dropdown-content">
+                                <a href="">Broadband</a>
+                                <a href="">VoLTE</a>
+                                <a href="">Device Financing</a>
+                            </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link active hover-nav" aria-current="page" href="#">Sim Services</a>
+                        <li class="nav-item droppy">
+                            <a class="nav-link active hover-nav" aria-current="page" href="#" id="annoying">Sim
+                                Services</a>
+                            <div class="dropdown-content">
+                                <a href="">eSIM</a>
+                                <a href="">SIM Swap</a>
+                                <a href="">SIM Registration Tips</a>
+                                <a href="">Keep My Number</a>
+                                <a href="">Link Your NIN</a>
+                            </div>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item droppy">
                             <a class="nav-link active hover-nav" aria-current="page" href="#">Support </a>
+                            <div class="dropdown-content">
+                                <a href="">Find A Store</a>
+                                <a href="">Coverage Locator</a>
+                                <a href="">Help Center</a>
+                                <a href="">Internet Settings</a>
+                            </div>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item droppy">
                             <a class="nav-link active hover-nav" aria-current="page" href="#">Shop</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item droppy">
                             <img src="./Assets/search_24dp_EEEEEEE_FILL0_wght400_GRAD0_opsz24.png" class="mx-5" alt="">
                         </li>
                     </ul>
@@ -94,7 +127,7 @@
         <h2>MTN BetaGist</h2>
         <p>Talk for 6 mins | Get 3 mins extra</p>
     </section>
-    <section class="container mx-2 bg-body" id>
+    <section class="container mx-2 bg-body my-5" id>
         <p class="text-start w-75 fs-5 m-auto opacity-75">MTN BetaGist is a prepaid plan that lets you call anyone on
             any network in Nigeria at a flat rate of 30 kobo per second.</p>
         <p class="text-start w-75 fs-5 m-auto opacity-75 mt-5">There’s more! For every 6 minutes of calls you make, you
@@ -108,29 +141,217 @@
             BetaGist for FREE using any of the channels below:</p>
 
         <div class="card-group">
-            <div class="card border-0 d-flex flex-row container-fluid mx-5 justify-content-around my-5" >
+            <div class="card border-0 d-flex flex-row container-fluid  justify-content-around my-5 m-auto">
                 <div>
-                    <img src="./Assets/chat_24dp_000000_FILL0_wght200_GRAD0_opsz24.svg" class="card-img-top imgish" alt="..." width="120px" height="120px">
+                    <img src="./Assets/chat_24dp_000000_FILL0_wght200_GRAD0_opsz24.svg" class="card-img-top imgish"
+                        alt="..." width="120px" height="120px">
                     <div class="card-body text-center">
-                        <h5 class="card-title">Text BG to 312</h5>
+                        <h5 class="card-title fs-4 fw-bolder">Text BG to 312</h5>
+                    </div>
                 </div>
-                </div>
-
                 <div>
+                    <img src="./Assets/dialpad_24dp_000000_FILL0_wght200_GRAD0_opsz24.svg" class="card-img-top imgish"
+                        alt="..." width="120px" height="120px">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fs-4 fw-bolder">Dial *123*1*2#</h5>
+                    </div>
+                </div>
+                <div>
+                    <img src="./Assets/robot_2_24dp_000000_FILL0_wght200_GRAD0_opsz24.svg" class="card-img-top imgish"
+                        alt="..." width="120px" height="120px">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fs-4 fw-bolder">Chat with Zigi</h5>
+                    </div>
+                </div>
 
-                    <img src="./Assets/dialpad_24dp_000000_FILL0_wght200_GRAD0_opsz24.svg" class="card-img-top imgish" alt="..." width="120px" height="120px">
+                <!-- <div>
+                    <img src="./Assets/dialpad_24dp_000000_FILL0_wght200_GRAD0_opsz24.svg" class="card-img-top imgish"
+                        alt="..." width="120px" height="120px">
                     <div class="card-body text-center">
                         <h5 class="card-title">Dial *123*2*1#</h5>
-                </div>
+                    </div>
                 </div>
 
                 <div>
-                    <img src="./Assets/robot_2_24dp_000000_FILL0_wght200_GRAD0_opsz24.svg" class="card-img-top imgish" alt="..." width="120px" height="120px">
-                    
-                        <h5 class="card-title text-center w-75 mx-5">Chat with Zigi, MTN's virtual assistant</h5>
-                    
+                    <img src="./Assets/robot_2_24dp_000000_FILL0_wght200_GRAD0_opsz24.svg" class="card-img-top imgish"
+                        alt="..." width="120px" height="120px">
+                    <h5 class="card-title text-center w-75 mx-5">Chat with Zigi, MTN's virtual assistant</h5>
+
+                </div> -->
+
+
+            </div>
+    </section>
+    <section>
+        <div class="d-grid gap-2 col-3 mx-auto my-5">
+            <button class="btn px-3 py-3 rounded-pill fw-semibold" type="button" id="cool-btn">BETAGIST
+                OVERVIEW</button>
+        </div>
+    </section>
+    <section>
+        <h1 class=" my-3 fw-bolder" style="margin-left: 250px;">Frequently Asked Questions</h1>
+        <div class="accordion container-fluid w-75 my-4 " id="accordionPanelsStayOpenExample">
+            <div class="accordion-item" id="accord-1">
+                <h2 class="accordion-header">
+                    <button class="accordion-button bg-body fs-5 text-black" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne">
+                        What is MTN BetaGist?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                    <div class="accordion-body p-5" id="accord-bg2">
+                        A. MTN BetaGist is a prepaid tariff plan that allows customers to enjoy a FLAT rate of 30 kobo
+                        per second for all national calls across all local networks.
+                    </div>
                 </div>
-            
+            </div>
+            <div class="accordion-item" id="accord-1">
+                <h2 class="accordion-header">
+                    <button class="accordion-button bg-body fs-5 text-black" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapsetwo" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapsetwo">
+                        Who can migrate to MTN BetaGist plan?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapsetwo" class="accordion-collapse collapse show">
+                    <div class="accordion-body p-5" id="accord-bg2">
+                        A. All MTN Prepaid customers are eligible to migrate to the MTN BetaGist plan.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item" id="accord-1">
+                <h2 class="accordion-header">
+                    <button class="accordion-button bg-body fs-5 text-black" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapsethree" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapsethree">
+                        Why should I migrate to MTN BetaGist?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapsethree" class="accordion-collapse collapse show">
+                    <div class="accordion-body p-5" id="accord-bg2">
+                        A. By migrating to MTN BetaGist, you will enjoy:
+
+                        Flat call rate of 30 kobo per second for all national calls.
+                        You will enjoy a promotional offer of 3 minutes for every 6 minutes of outgoing local calls.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item" id="accord-1">
+                <h2 class="accordion-header">
+                    <button class="accordion-button bg-body fs-5 text-black" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapsefour" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapsefour">
+                        How do I migrate to MTN BetaGist?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapsefour" class="accordion-collapse collapse show">
+                    <div class="accordion-body p-5" id="accord-bg2">
+                        A. MTN Beta BetaGist is the default tariff plan for new customers after SIM registration.
+                        <br>
+                        <br>
+
+                        However, existing customers can migrate to MTN BetaGist using any of the following channels:
+                        <br>
+                        <br>
+
+                        Text BG to 312
+                        <br>
+
+                        Dial *123*2*1# or *405#
+                        <br>
+                        MTN ChatBot (Zigi):
+                        <br>
+                        Login to ChatBot (Zigi).
+                        <br>
+                        Select ‘Start a new conversation’.
+                        <br>
+                        Enter your phone number.
+                        <br>
+                        Enter the OTP.
+                        <br>
+                        Select ‘Services’.
+                        <br>
+                        Select ‘Tariff plan’.
+                        <br>
+                        Select ‘Personal’.
+                        <br>
+                        Select ‘BetaGist’.
+                        <br>
+                        Confirm the migration to BetaGist.
+                        <br>
+                        myMTN app:
+                        <br>
+                        Login to myMTN NG app.
+                        <br>
+                        Select the tariff name
+                        <br>
+                        On the “Tariff plans’ page, click the personal plan’ button.
+                        <br>
+                        Scroll down to select ‘BetaGist’.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item" id="accord-1">
+                <h2 class="accordion-header">
+                    <button class="accordion-button bg-body fs-5 text-black" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapsefive" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapsefive">
+                        How much will I be charged for migrating to MTN BetaGist plan?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapsefive" class="accordion-collapse collapse show">
+                    <div class="accordion-body p-5" id="accord-bg2">
+                        A. Migration into MTN BetaGist is FREE if it is your first migration in 30 days. However,
+                        subsequent migrations within the same month will attract a migration fee of N150.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="carosel">
+            <div id="cardCarousel" class="carousel slide">
+                <div class="carousel-inner">
+
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="d-flex gap-3 justify-content-center">
+                            <div class="cards">
+                                <span>XtraValue<br>
+                                    <p></p>Find out more
+                                </span>
+                            </div>
+                            <div class="cards">XtraSpecial Postpaid<br>Find out more</div>
+                            <div class="cards">Xtrabuy<br>Find out more</div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="d-flex gap-3 justify-content-center">
+                            <div class="cards">Card 4<br>Find out more</div>
+                            <div class="cards">Card 5<br>Find out more</div>
+                            <div class="cards">Card 6<br>Find out more</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Arrows -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+
+                <!-- Dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#cardCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#cardCarousel" data-bs-slide-to="1"></button>
+                </div>
+            </div>
         </div>
     </section>
 </body>
